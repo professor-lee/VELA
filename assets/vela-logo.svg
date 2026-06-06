@@ -1,0 +1,73 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="navy" x1="260" y1="220" x2="765" y2="770" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07122E"/>
+      <stop offset="1" stop-color="#102452"/>
+    </linearGradient>
+
+    <linearGradient id="orangeRed" x1="260" y1="512" x2="765" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF3B1F"/>
+      <stop offset="1" stop-color="#FF6A3D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 米白色背景 -->
+  <rect width="1024" height="1024" fill="#F4F0E6"/>
+
+  <!-- 橙红色横向结构 -->
+  <rect x="259" y="469" width="506" height="87" fill="url(#orangeRed)"/>
+
+  <!-- 左上黑蓝色斜块 -->
+  <polygon
+    points="
+      259,333
+      357,333
+      425,452
+      328,452
+    "
+    fill="url(#navy)"
+  />
+
+  <!-- 主体 V / 上升箭头结构 -->
+  <polygon
+    points="
+      604,347
+      765,221
+      765,430
+      724,400
+      513,771
+      398,572
+      496,572
+      513,608
+      650,362
+    "
+    fill="url(#navy)"
+  />
+
+  <!-- 中部米白切口，用于强化横杠被箭头切开的感觉 -->
+  <polygon
+    points="
+      570,469
+      617,469
+      566,556
+      520,556
+    "
+    fill="#F4F0E6"
+  />
+
+  <!-- 重新覆盖箭头，使切口不破坏主体边缘 -->
+  <polygon
+    points="
+      604,347
+      765,221
+      765,430
+      724,400
+      513,771
+      398,572
+      496,572
+      513,608
+      650,362
+    "
+    fill="url(#navy)"
+  />
+</svg>
