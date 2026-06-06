@@ -58,7 +58,6 @@ A document-driven harness specification repository for AI coding agents.
     - [2. Give the BUILDER to an agent](#2-give-the-builder-to-an-agent)
     - [3. Let the agent generate the runtime harness](#3-let-the-agent-generate-the-runtime-harness)
     - [4. Put the generated output into a target workspace](#4-put-the-generated-output-into-a-target-workspace)
-  - [Recommended Repository Structure](#recommended-repository-structure)
   - [What the Generated Harness Produces](#what-the-generated-harness-produces)
   - [How to Use the Generated Harness](#how-to-use-the-generated-harness)
     - [1. Provide a North Star document v0.0.1](#1-provide-a-north-star-document-v001)
@@ -96,22 +95,22 @@ In other words:
 
 ## What This Repository Contains
 
-With the current publishing model, this repository only needs to contain:
+The current repository structure is:
 
 ```text
 README.md
-README.en.md
+README_zh.md
+VELA_HARNESS_BUILDER.md
 assets/
 └── vela-logo.svg
-VELA_HARNESS_BUILDER.md
 ```
 
 Where:
 
-- `README.md`: Chinese documentation.
-- `README.en.md`: English documentation.
-- `assets/vela-logo.svg`: project logo.
+- `README.md`: English documentation.
+- `README_zh.md`: Simplified Chinese documentation.
 - `VELA_HARNESS_BUILDER.md`: the core build specification that defines how to generate `AGENTS.md`, `CLAUDE.md`, and `.vela/`.
+- `assets/vela-logo.svg`: project logo.
 
 ---
 
@@ -152,15 +151,17 @@ This makes VELA more like a **development process constraint layer** than a norm
 
 ## Quick Start
 
+Build the harness according to `VELA_HARNESS_BUILDER.md`.
+
 ### 1. Get the repository contents
 
 Clone or download the repository and obtain:
 
 ```text
 README.md
-README.en.md
-assets/vela-logo.svg
+README_zh.md
 VELA_HARNESS_BUILDER.md
+assets/vela-logo.svg
 ```
 
 ### 2. Give the BUILDER to an agent
@@ -195,23 +196,6 @@ CLAUDE.md
 ```
 
 Then let Codex or Claude Code run inside that workspace.
-
----
-
-## Recommended Repository Structure
-
-If you maintain the repository in the “README-related files + BUILDER only” style, the recommended layout is:
-
-```text
-VELA/
-├── README.md
-├── README.en.md
-├── VELA_HARNESS_BUILDER.md
-└── assets/
-    └── vela-logo.svg
-```
-
-This is a **specification repository**, not a **prebuilt runtime repository**.
 
 ---
 
@@ -380,4 +364,4 @@ It is for people who want to constrain AI coding agents into a stable, document-
 
 ---
 
-For the Chinese version, see [README.md](./README.md).
+For the Chinese version, see [README_zh.md](./README_zh.md).

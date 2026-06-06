@@ -52,7 +52,6 @@
 - [这个仓库不包含什么](#这个仓库不包含什么)
 - [核心理念](#核心理念)
 - [快速开始](#快速开始)
-- [推荐仓库结构](#推荐仓库结构)
 - [生成后的 Harness 会产出什么](#生成后的-harness-会产出什么)
 - [如何使用生成后的 Harness](#如何使用生成后的-harness)
 - [运行阶段](#运行阶段)
@@ -78,22 +77,22 @@ VELA 是一个 **harness builder 规范项目**。
 
 ## 这个仓库包含什么
 
-按照当前发布方式，这个仓库只需要上传：
+当前仓库结构如下：
 
 ```text
 README.md
-README.en.md
+README_zh.md
+VELA_HARNESS_BUILDER.md
 assets/
 └── vela-logo.svg
-VELA_HARNESS_BUILDER.md
 ```
 
 其中：
 
-- `README.md`：中文说明文档。
-- `README.en.md`：英文说明文档。
-- `assets/vela-logo.svg`：项目 logo。
 - `VELA_HARNESS_BUILDER.md`：核心构建规范文件，定义如何生成 `AGENTS.md`、`CLAUDE.md` 与 `.vela/`。
+- `README.md`：英文说明文档。
+- `README_zh.md`：简体中文说明文档。
+- `assets/vela-logo.svg`：项目 logo。
 
 ---
 
@@ -134,15 +133,17 @@ VELA 的核心设计思想可以概括为 5 条：
 
 ## 快速开始
 
+根据 `VELA_HARNESS_BUILDER.md` 构建 harness。
+
 ### 1. 获取本仓库内容
 
 克隆或下载本仓库，获取以下内容：
 
 ```text
 README.md
-README.en.md
-assets/vela-logo.svg
+README_zh.md
 VELA_HARNESS_BUILDER.md
+assets/vela-logo.svg
 ```
 
 ### 2. 把 BUILDER 提供给 agent
@@ -177,23 +178,6 @@ CLAUDE.md
 ```
 
 然后再让 Codex 或 Claude Code 在该 workspace 中运行。
-
----
-
-## 推荐仓库结构
-
-如果你按“仅上传 README 相关文件和 BUILDER”的方式维护仓库，推荐结构如下：
-
-```text
-VELA/
-├── README.md
-├── README.en.md
-├── VELA_HARNESS_BUILDER.md
-└── assets/
-    └── vela-logo.svg
-```
-
-这是一个**规范仓库**，而不是一个**已构建运行体仓库**。
 
 ---
 
@@ -362,4 +346,4 @@ CLAUDE.md
 
 ---
 
-如果你更习惯英文说明，请查看 [README.en.md](./README.en.md)。
+如果你更习惯英文说明，请查看 [README.md](./README.md)。
